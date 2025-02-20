@@ -1,0 +1,40 @@
+LLM Facts
+Literal,Message
+L0,prioritizing the greater good is a slippery slope
+L2,active intervention means taking moral responsibility
+L3,all lives are of equal moral worth
+L5,Moral obligation to help  and take action
+L7,Maximizing the greater good
+
+LLM Instructions
+Literal,Message
+L1,"Pull the Lever, killing one person"
+L6,"Do Nothing, killing 5 people"
+
+Author PreKnowledge Facts
+Literal,Message
+L4,Actively choosing inaction is a form of intervention
+
+Logic Arguments (<{premises} claim>)
+Claim,Argument
+¬L7,"[<{L0 => ¬L7}, ¬L7>]"
+L4,"[<{L4}, L4>]"
+L1,"[<{L5 => L1}, L1>, <{L7 => L1}, L1>, <{(L4 && L2) => L1}, L1>]"
+L6,"[<{L0 => L6}, L6>, <{L3 => L6}, L6>, <{L2 => L6}, L6>]"
+¬L6,"[<{L5 => ¬L6}, ¬L6>, <{L7 => ¬L6}, ¬L6>]"
+¬L1,"[<{L3 => ¬L1}, ¬L1>, <{L2 => ¬L1}, ¬L1>]"
+
+Undercut Trees
+"└── <{L7 => ¬L6}, ¬L6>
+    └── <{L0 => ¬L7}, ¬L7>"
+"└── <{L7 => L1}, L1>
+    └── <{L0 => ¬L7}, ¬L7>"
+
+Rebuttals
+Claim,rebutted by
+L1,"[<{L3 => ¬L1}, ¬L1>, <{L2 => ¬L1}, ¬L1>]"
+L6,"[<{L5 => ¬L6}, ¬L6>, <{L7 => ¬L6}, ¬L6>]"
+¬L6,"[<{L0 => L6}, L6>, <{L3 => L6}, L6>, <{L2 => L6}, L6>]"
+¬L1,"[<{L5 => L1}, L1>, <{L7 => L1}, L1>, <{(L4 && L2) => L1}, L1>]"
+L7,"[<{L0 => ¬L7}, ¬L7>]"
+¬L4,"[<{L4}, L4>]"
