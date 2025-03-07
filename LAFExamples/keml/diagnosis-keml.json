@@ -28,80 +28,80 @@
       "originalContent" : "Sorry to hear you're not feeling well! A headache and runny nose can have several possible causes. Here are some common ones:\n\n1. **Common Cold**: The typical culprit for symptoms like a runny nose and headache. You might also feel tired or have a sore throat.\n   \n2. **Sinusitis**: Inflammation of the sinuses often causes headaches, a runny nose, and facial pressure. It can follow a cold or be triggered by allergies.\n   \n3. **Allergies**: Seasonal allergies or allergic reactions can cause a runny nose and headache, along with sneezing, itchy eyes, or throat irritation.\n\n4. **Flu**: Similar to a cold but with more intense symptoms like body aches, fever, chills, or fatigue.\n\n5. **COVID-19**: Can sometimes present with similar symptoms to a cold or flu, but you might also have a cough, sore throat, or loss of taste and smell.\n\nIs there any other symptom you’ve noticed, like fever, body aches, or a sore throat? That might help narrow things down more.",
       "generates" : [ {
         "message" : "Allergies",
-        "asLiteral" : [ {
+        "asLiterals" : [ {
           "premises" : [ {
             "eClass" : "http://www.unikoblenz.de/keml#//Junction",
-            "$ref" : "//@author/@preknowledge.0/@asLiteral.0/@usedInJunctions.0"
+            "$ref" : "//@author/@preknowledge.0/@asLiterals.0/@usedInJunctions.0"
           } ]
         }, {
           "negated" : true,
           "premises" : [ {
             "eClass" : "http://www.unikoblenz.de/keml#//Literal",
-            "$ref" : "//@author/@preknowledge.2/@asLiteral.0"
+            "$ref" : "//@author/@preknowledge.2/@asLiterals.0"
           } ]
         } ]
       }, {
         "message" : "Common Cold",
-        "asLiteral" : [ {
+        "asLiterals" : [ {
           "premises" : [ {
             "eClass" : "http://www.unikoblenz.de/keml#//Junction",
-            "$ref" : "//@author/@preknowledge.0/@asLiteral.0/@usedInJunctions.0"
+            "$ref" : "//@author/@preknowledge.0/@asLiterals.0/@usedInJunctions.0"
           } ]
         }, {
           "negated" : true,
           "premises" : [ {
             "eClass" : "http://www.unikoblenz.de/keml#//Junction",
-            "$ref" : "//@author/@messages.5/@generates.0/@asLiteral.0/@usedInJunctions.0"
+            "$ref" : "//@author/@messages.5/@generates.0/@asLiterals.0/@usedInJunctions.0"
           } ]
         } ]
       }, {
         "message" : "Sinus Infection",
-        "asLiteral" : [ {
+        "asLiterals" : [ {
           "premises" : [ {
             "eClass" : "http://www.unikoblenz.de/keml#//Junction",
-            "$ref" : "//@author/@preknowledge.0/@asLiteral.0/@usedInJunctions.0"
+            "$ref" : "//@author/@preknowledge.0/@asLiterals.0/@usedInJunctions.0"
           } ]
         }, {
           "negated" : true,
           "premises" : [ {
             "eClass" : "http://www.unikoblenz.de/keml#//Junction",
-            "$ref" : "//@author/@messages.5/@generates.1/@asLiteral.0/@usedInJunctions.0"
+            "$ref" : "//@author/@messages.5/@generates.1/@asLiterals.0/@usedInJunctions.0"
           } ]
         } ]
       }, {
         "message" : "Flu",
-        "asLiteral" : [ {
+        "asLiterals" : [ {
           "premises" : [ {
             "eClass" : "http://www.unikoblenz.de/keml#//Junction",
-            "$ref" : "//@author/@preknowledge.0/@asLiteral.0/@usedInJunctions.0"
+            "$ref" : "//@author/@preknowledge.0/@asLiterals.0/@usedInJunctions.0"
           }, {
             "eClass" : "http://www.unikoblenz.de/keml#//Junction",
-            "$ref" : "//@author/@preknowledge.4/@asLiteral.0/@usedInJunctions.0"
+            "$ref" : "//@author/@preknowledge.4/@asLiterals.0/@usedInJunctions.0"
           }, {
             "eClass" : "http://www.unikoblenz.de/keml#//Junction",
-            "$ref" : "//@author/@messages.9/@generates.0/@asLiteral.0/@usedInJunctions.0"
+            "$ref" : "//@author/@messages.9/@generates.0/@asLiterals.0/@usedInJunctions.0"
           } ]
         }, {
           "negated" : true
         } ]
       }, {
         "message" : "COVID-19",
-        "asLiteral" : [ {
+        "asLiterals" : [ {
           "premises" : [ {
             "eClass" : "http://www.unikoblenz.de/keml#//Junction",
-            "$ref" : "//@author/@preknowledge.0/@asLiteral.0/@usedInJunctions.0"
+            "$ref" : "//@author/@preknowledge.0/@asLiterals.0/@usedInJunctions.0"
           }, {
             "eClass" : "http://www.unikoblenz.de/keml#//Junction",
-            "$ref" : "//@author/@preknowledge.4/@asLiteral.0/@usedInJunctions.0"
+            "$ref" : "//@author/@preknowledge.4/@asLiterals.0/@usedInJunctions.0"
           }, {
             "eClass" : "http://www.unikoblenz.de/keml#//Junction",
-            "$ref" : "//@author/@messages.9/@generates.0/@asLiteral.0/@usedInJunctions.0"
+            "$ref" : "//@author/@messages.9/@generates.0/@asLiterals.0/@usedInJunctions.0"
           } ]
         }, {
           "negated" : true,
           "premises" : [ {
             "eClass" : "http://www.unikoblenz.de/keml#//Literal",
-            "$ref" : "//@author/@preknowledge.6/@asLiteral.0"
+            "$ref" : "//@author/@preknowledge.6/@asLiterals.0"
           } ]
         } ]
       } ]
@@ -154,46 +154,46 @@
       "originalContent" : "With the addition of a **fever** and **sore throat**, the possibilities shift a bit. Here are some things to consider:\n\n1. **Flu (Influenza)**: The flu often presents with a high fever, sore throat, headache, fatigue, and body aches. If you're feeling generally unwell and achy, this could be a likely cause. \n\n2. **COVID-19**: It can also cause a sore throat, fever, and headache, along with other symptoms like cough or loss of taste/smell. Given that it’s still circulating, it’s worth considering, especially if you’ve been exposed recently.\n\n3. **Strep Throat**: This is a bacterial infection that causes a very sore throat, sometimes accompanied by fever and headache. It doesn’t typically cause a runny nose, though.\n\n4. **Sinus Infection (Sinusitis)**: If the fever is mild and you're feeling congestion or pressure in your sinuses, sinusitis could be the cause, especially if it developed after a cold.\n\nGiven that you have a fever and sore throat, it's a good idea to monitor for any worsening symptoms. If the fever gets high, you develop difficulty swallowing, or you start feeling significantly worse, it might be a good idea to reach out to a healthcare provider. In particular, **strep throat** requires antibiotic treatment, and **flu** or **COVID-19** might require additional care or isolation.\n\nHow’s your fever—pretty high, or mild?",
       "generates" : [ {
         "message" : "Introduction of fever and sore throat eliminates  common cold",
-        "asLiteral" : [ {
+        "asLiterals" : [ {
           "usedInJunctions" : [ {
             "content" : [ {
               "eClass" : "http://www.unikoblenz.de/keml#//Literal",
-              "$ref" : "//@author/@preknowledge.3/@asLiteral.0"
+              "$ref" : "//@author/@preknowledge.3/@asLiterals.0"
             }, {
               "eClass" : "http://www.unikoblenz.de/keml#//Literal",
-              "$ref" : "//@author/@preknowledge.4/@asLiteral.0"
+              "$ref" : "//@author/@preknowledge.4/@asLiterals.0"
             }, {
               "eClass" : "http://www.unikoblenz.de/keml#//Literal",
-              "$ref" : "//@author/@messages.5/@generates.0/@asLiteral.0"
+              "$ref" : "//@author/@messages.5/@generates.0/@asLiterals.0"
             } ]
           } ]
         }, {
           "negated" : true,
           "premises" : [ {
             "eClass" : "http://www.unikoblenz.de/keml#//Literal",
-            "$ref" : "//@author/@messages.13/@generates.0/@asLiteral.0"
+            "$ref" : "//@author/@messages.13/@generates.0/@asLiterals.0"
           } ]
         } ]
       }, {
         "message" : "Introduction of fever and sore throat eliminates  sinus infection",
-        "asLiteral" : [ {
+        "asLiterals" : [ {
           "usedInJunctions" : [ {
             "content" : [ {
               "eClass" : "http://www.unikoblenz.de/keml#//Literal",
-              "$ref" : "//@author/@preknowledge.3/@asLiteral.0"
+              "$ref" : "//@author/@preknowledge.3/@asLiterals.0"
             }, {
               "eClass" : "http://www.unikoblenz.de/keml#//Literal",
-              "$ref" : "//@author/@preknowledge.4/@asLiteral.0"
+              "$ref" : "//@author/@preknowledge.4/@asLiterals.0"
             }, {
               "eClass" : "http://www.unikoblenz.de/keml#//Literal",
-              "$ref" : "//@author/@messages.5/@generates.1/@asLiteral.0"
+              "$ref" : "//@author/@messages.5/@generates.1/@asLiterals.0"
             } ]
           } ]
         }, {
           "negated" : true,
           "premises" : [ {
             "eClass" : "http://www.unikoblenz.de/keml#//Literal",
-            "$ref" : "//@author/@messages.15/@generates.0/@asLiteral.0"
+            "$ref" : "//@author/@messages.15/@generates.0/@asLiterals.0"
           } ]
         } ]
       }, {
@@ -202,16 +202,16 @@
           "eClass" : "http://www.unikoblenz.de/keml#//SendMessage",
           "$ref" : "//@author/@messages.6"
         } ],
-        "asLiteral" : [ {
+        "asLiterals" : [ {
           "premises" : [ {
             "eClass" : "http://www.unikoblenz.de/keml#//Junction",
-            "$ref" : "//@author/@preknowledge.4/@asLiteral.0/@usedInJunctions.0"
+            "$ref" : "//@author/@preknowledge.4/@asLiterals.0/@usedInJunctions.0"
           } ]
         }, {
           "negated" : true,
           "premises" : [ {
             "eClass" : "http://www.unikoblenz.de/keml#//Junction",
-            "$ref" : "//@author/@preknowledge.5/@asLiteral.0/@usedInJunctions.0"
+            "$ref" : "//@author/@preknowledge.5/@asLiterals.0/@usedInJunctions.0"
           } ]
         } ]
       } ]
@@ -241,7 +241,7 @@
           "eClass" : "http://www.unikoblenz.de/keml#//SendMessage",
           "$ref" : "//@author/@messages.8"
         } ],
-        "asLiteral" : [ { }, {
+        "asLiterals" : [ { }, {
           "negated" : true
         } ]
       } ]
@@ -272,14 +272,14 @@
       "originalContent" : "You're right—strep throat can sometimes cause **red spots** or **white patches** on the roof of the mouth, as well as swollen tonsils. If you're not seeing that, it's less likely to be strep throat, although it’s still possible to have it without those classic signs.\n\nSince you're dealing with **fever, sore throat, headache**, and a **runny nose**, that makes me lean more toward the **flu** or **COVID-19** at this point. Both can present with similar symptoms like fever and sore throat, along with general aches and fatigue. The **runny nose** is a bit less common in the flu but can still occur, and sometimes people confuse the early symptoms of flu and COVID-19.\n\nIf you have the option, it might be worth doing a **COVID-19 test** and keeping an eye on your symptoms. \n\nHow are you feeling overall? Any major changes in how you're doing since the symptoms started?",
       "generates" : [ {
         "message" : "Eliminating strep throat makes Flu or COVID more likely",
-        "asLiteral" : [ {
+        "asLiterals" : [ {
           "usedInJunctions" : [ {
             "content" : [ {
               "eClass" : "http://www.unikoblenz.de/keml#//Literal",
-              "$ref" : "//@author/@messages.5/@generates.2/@asLiteral.1"
+              "$ref" : "//@author/@messages.5/@generates.2/@asLiterals.1"
             }, {
               "eClass" : "http://www.unikoblenz.de/keml#//Literal",
-              "$ref" : "//@author/@messages.9/@generates.0/@asLiteral.0"
+              "$ref" : "//@author/@messages.9/@generates.0/@asLiterals.0"
             } ]
           } ]
         }, {
@@ -328,7 +328,7 @@
       "originalContent" : "You're right to ask! A **common cold** definitely could be the cause, especially since you're dealing with symptoms like a runny nose and headache. Colds typically don’t cause a high fever, but they can come with a sore throat, congestion, and mild headaches. The cold tends to have a gradual onset compared to the flu, which often feels more intense right away.\n\nSince you mentioned a **fever** and **sore throat**, those two symptoms made the flu seem more likely, as it tends to have a more prominent fever and body aches. But I should have acknowledged that a cold *can* still present with those symptoms, especially if it's a particularly bad cold or if you're more sensitive to the virus. \n\nIn summary, it’s possible it’s still a cold, especially with the negative COVID test. If the fever is mild or only lasts a day or two, it could indeed just be a cold. If it lingers longer or gets worse, that’s when we’d start thinking more about flu or other possibilities.\n\nDo you feel like your symptoms are more mild and slowly building, or did they come on pretty quickly?",
       "generates" : [ {
         "message" : "Common cold is still possible  but is less likely",
-        "asLiteral" : [ { }, {
+        "asLiterals" : [ { }, {
           "negated" : true
         } ]
       } ]
@@ -352,7 +352,7 @@
       "originalContent" : "You're absolutely right to ask about that, too. A **sinus infection (sinusitis)** can definitely cause symptoms like headache, runny nose, and a sore throat (due to post-nasal drip), and it can sometimes be accompanied by a low-grade fever. I focused more on the flu and COVID-19 because of the presence of fever and sore throat, which are more commonly associated with those conditions. But sinus infections can absolutely mimic these symptoms.\n\nSinus infections are often characterized by:\n- A **headache** that feels like pressure around the forehead, eyes, or cheeks.\n- **Runny nose** or congestion that might last for more than a week.\n- **Sore throat** due to post-nasal drip.\n- **Fever** (typically mild).\n\nThe difference is that **sinusitis** often develops after a cold or due to allergies, and the congestion or facial pressure tends to be more pronounced.\n\nSince your symptoms include a **headache** and **runny nose**, along with a **sore throat** and **fever**, a sinus infection could very well be a possibility. If you're feeling pressure around your face or sinuses, or if the headache feels different from a typical tension headache, that would make sinusitis more likely.\n\nIf your symptoms persist or worsen, it might be helpful to see a doctor for further evaluation to check for sinusitis, especially if you’re not improving after a few days.\n\nThanks for bringing that up! How do you feel in terms of facial pressure or congestion around your eyes/forehead?",
       "generates" : [ {
         "message" : "Sinus infection is still possible but is less likely",
-        "asLiteral" : [ { }, {
+        "asLiterals" : [ { }, {
           "negated" : true
         } ]
       } ]
@@ -363,14 +363,14 @@
         "eClass" : "http://www.unikoblenz.de/keml#//SendMessage",
         "$ref" : "//@author/@messages.0"
       } ],
-      "asLiteral" : [ {
+      "asLiterals" : [ {
         "usedInJunctions" : [ {
           "content" : [ {
             "eClass" : "http://www.unikoblenz.de/keml#//Literal",
-            "$ref" : "//@author/@preknowledge.1/@asLiteral.0"
+            "$ref" : "//@author/@preknowledge.1/@asLiterals.0"
           }, {
             "eClass" : "http://www.unikoblenz.de/keml#//Literal",
-            "$ref" : "//@author/@preknowledge.0/@asLiteral.0"
+            "$ref" : "//@author/@preknowledge.0/@asLiterals.0"
           } ]
         } ]
       }, {
@@ -382,7 +382,7 @@
         "eClass" : "http://www.unikoblenz.de/keml#//SendMessage",
         "$ref" : "//@author/@messages.0"
       } ],
-      "asLiteral" : [ { }, {
+      "asLiterals" : [ { }, {
         "negated" : true
       } ]
     }, {
@@ -391,7 +391,7 @@
         "eClass" : "http://www.unikoblenz.de/keml#//SendMessage",
         "$ref" : "//@author/@messages.2"
       } ],
-      "asLiteral" : [ { }, {
+      "asLiterals" : [ { }, {
         "negated" : true
       } ]
     }, {
@@ -400,7 +400,7 @@
         "eClass" : "http://www.unikoblenz.de/keml#//SendMessage",
         "$ref" : "//@author/@messages.4"
       } ],
-      "asLiteral" : [ { }, {
+      "asLiterals" : [ { }, {
         "negated" : true
       } ]
     }, {
@@ -409,20 +409,20 @@
         "eClass" : "http://www.unikoblenz.de/keml#//SendMessage",
         "$ref" : "//@author/@messages.4"
       } ],
-      "asLiteral" : [ {
+      "asLiterals" : [ {
         "usedInJunctions" : [ {
           "content" : [ {
             "eClass" : "http://www.unikoblenz.de/keml#//Literal",
-            "$ref" : "//@author/@preknowledge.1/@asLiteral.0"
+            "$ref" : "//@author/@preknowledge.1/@asLiterals.0"
           }, {
             "eClass" : "http://www.unikoblenz.de/keml#//Literal",
-            "$ref" : "//@author/@preknowledge.0/@asLiteral.0"
+            "$ref" : "//@author/@preknowledge.0/@asLiterals.0"
           }, {
             "eClass" : "http://www.unikoblenz.de/keml#//Literal",
-            "$ref" : "//@author/@preknowledge.3/@asLiteral.0"
+            "$ref" : "//@author/@preknowledge.3/@asLiterals.0"
           }, {
             "eClass" : "http://www.unikoblenz.de/keml#//Literal",
-            "$ref" : "//@author/@preknowledge.4/@asLiteral.0"
+            "$ref" : "//@author/@preknowledge.4/@asLiterals.0"
           } ]
         } ]
       }, {
@@ -434,14 +434,14 @@
         "eClass" : "http://www.unikoblenz.de/keml#//SendMessage",
         "$ref" : "//@author/@messages.8"
       } ],
-      "asLiteral" : [ {
+      "asLiterals" : [ {
         "usedInJunctions" : [ {
           "content" : [ {
             "eClass" : "http://www.unikoblenz.de/keml#//Literal",
-            "$ref" : "//@author/@messages.7/@generates.0/@asLiteral.0"
+            "$ref" : "//@author/@messages.7/@generates.0/@asLiterals.0"
           }, {
             "eClass" : "http://www.unikoblenz.de/keml#//Literal",
-            "$ref" : "//@author/@preknowledge.5/@asLiteral.0"
+            "$ref" : "//@author/@preknowledge.5/@asLiterals.0"
           } ]
         } ]
       }, {
@@ -453,7 +453,7 @@
         "eClass" : "http://www.unikoblenz.de/keml#//SendMessage",
         "$ref" : "//@author/@messages.10"
       } ],
-      "asLiteral" : [ { }, {
+      "asLiterals" : [ { }, {
         "negated" : true
       } ]
     } ]

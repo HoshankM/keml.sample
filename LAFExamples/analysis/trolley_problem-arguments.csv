@@ -1,40 +1,40 @@
 LLM Facts
 Literal,Message
-L1,active intervention means taking moral responsibility
-L2,prioritizing the greater good is a slippery slope
-L4,Maximizing the greater good
-L5,all lives are of equal moral worth
-L6,Moral obligation to help  and take action
+L3,Maximizing the greater good
+L4,prioritizing the greater good is a slippery slope
+L5,active intervention means taking moral responsibility
+L6,all lives are of equal moral worth
+L7,Moral obligation to help  and take action
 
 LLM Instructions
 Literal,Message
-L0,"Do Nothing, killing 5 people"
-L3,"Pull the Lever, killing one person"
+L1,"Pull the Lever, killing one person"
+L2,"Do Nothing, killing 5 people"
 
 Author PreKnowledge Facts
 Literal,Message
-L7,Actively choosing inaction is a form of intervention
+L0,Actively choosing inaction is a form of intervention
 
 Logic Arguments (<{premises} claim>)
 Claim,Argument
-¬L4,"[<{L2 => ¬L4}, ¬L4>]"
-L3,"[<{L6 => L3}, L3>, <{L4 => L3}, L3>, <{(L7 && L1) => L3}, L3>]"
-L0,"[<{L2 => L0}, L0>, <{L5 => L0}, L0>, <{L1 => L0}, L0>]"
-L7,"[<{L7}, L7>]"
-¬L0,"[<{L6 => ¬L0}, ¬L0>, <{L4 => ¬L0}, ¬L0>]"
-¬L3,"[<{L5 => ¬L3}, ¬L3>, <{L1 => ¬L3}, ¬L3>]"
+¬L3,"[<{L4 => ¬L3}, ¬L3>]"
+L0,"[<{L0}, L0>]"
+L2,"[<{L4 => L2}, L2>, <{L6 => L2}, L2>, <{L5 => L2}, L2>]"
+¬L1,"[<{L6 => ¬L1}, ¬L1>, <{L5 => ¬L1}, ¬L1>]"
+L1,"[<{L7 => L1}, L1>, <{L3 => L1}, L1>, <{(L0 && L5) => L1}, L1>]"
+¬L2,"[<{L7 => ¬L2}, ¬L2>, <{L3 => ¬L2}, ¬L2>]"
 
 Undercut Trees
-"└── <{L4 => L3}, L3>
-    └── <{L2 => ¬L4}, ¬L4>"
-"└── <{L4 => ¬L0}, ¬L0>
-    └── <{L2 => ¬L4}, ¬L4>"
+"└── <{L3 => ¬L2}, ¬L2>
+    └── <{L4 => ¬L3}, ¬L3>"
+"└── <{L3 => L1}, L1>
+    └── <{L4 => ¬L3}, ¬L3>"
 
 Rebuttals
 Claim,rebutted by
-L3,"[<{L5 => ¬L3}, ¬L3>, <{L1 => ¬L3}, ¬L3>]"
-¬L7,"[<{L7}, L7>]"
-L0,"[<{L6 => ¬L0}, ¬L0>, <{L4 => ¬L0}, ¬L0>]"
-L4,"[<{L2 => ¬L4}, ¬L4>]"
-¬L0,"[<{L2 => L0}, L0>, <{L5 => L0}, L0>, <{L1 => L0}, L0>]"
-¬L3,"[<{L6 => L3}, L3>, <{L4 => L3}, L3>, <{(L7 && L1) => L3}, L3>]"
+L2,"[<{L7 => ¬L2}, ¬L2>, <{L3 => ¬L2}, ¬L2>]"
+¬L0,"[<{L0}, L0>]"
+L3,"[<{L4 => ¬L3}, ¬L3>]"
+¬L1,"[<{L7 => L1}, L1>, <{L3 => L1}, L1>, <{(L0 && L5) => L1}, L1>]"
+L1,"[<{L6 => ¬L1}, ¬L1>, <{L5 => ¬L1}, ¬L1>]"
+¬L2,"[<{L4 => L2}, L2>, <{L6 => L2}, L2>, <{L5 => L2}, L2>]"

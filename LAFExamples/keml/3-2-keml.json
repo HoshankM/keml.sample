@@ -34,16 +34,16 @@
           "eClass" : "http://www.unikoblenz.de/keml#//SendMessage",
           "$ref" : "//@author/@messages.2"
         } ],
-        "asLiteral" : [ {
+        "asLiterals" : [ {
           "premises" : [ {
             "eClass" : "http://www.unikoblenz.de/keml#//Literal",
-            "$ref" : "//@author/@messages.3/@generates.0/@asLiteral.0"
+            "$ref" : "//@author/@messages.3/@generates.0/@asLiterals.0"
           } ]
         }, {
           "negated" : true,
           "premises" : [ {
             "eClass" : "http://www.unikoblenz.de/keml#//Literal",
-            "$ref" : "//@author/@messages.7/@generates.1/@asLiteral.0"
+            "$ref" : "//@author/@messages.7/@generates.1/@asLiterals.0"
           } ]
         } ]
       }, {
@@ -79,11 +79,11 @@
           "eClass" : "http://www.unikoblenz.de/keml#//SendMessage",
           "$ref" : "//@author/@messages.2"
         } ],
-        "asLiteral" : [ { }, {
+        "asLiterals" : [ { }, {
           "negated" : true,
           "premises" : [ {
             "eClass" : "http://www.unikoblenz.de/keml#//Literal",
-            "$ref" : "//@author/@messages.17/@generates.1/@asLiteral.0"
+            "$ref" : "//@author/@messages.17/@generates.1/@asLiterals.0"
           } ]
         } ]
       } ]
@@ -112,10 +112,10 @@
       },
       "generates" : [ {
         "message" : "7 URLs of unknown repositories",
-        "asLiteral" : [ {
+        "asLiterals" : [ {
           "premises" : [ {
             "eClass" : "http://www.unikoblenz.de/keml#//Literal",
-            "$ref" : "//@author/@messages.25/@generates.1/@asLiteral.0"
+            "$ref" : "//@author/@messages.25/@generates.1/@asLiterals.0"
           } ]
         }, {
           "negated" : true
@@ -157,16 +157,16 @@
           "eClass" : "http://www.unikoblenz.de/keml#//SendMessage",
           "$ref" : "//@author/@messages.6"
         } ],
-        "asLiteral" : [ {
+        "asLiterals" : [ {
           "premises" : [ {
             "eClass" : "http://www.unikoblenz.de/keml#//Literal",
-            "$ref" : "//@author/@messages.7/@generates.2/@asLiteral.0"
+            "$ref" : "//@author/@messages.7/@generates.2/@asLiterals.0"
           } ]
         }, {
           "negated" : true,
           "premises" : [ {
             "eClass" : "http://www.unikoblenz.de/keml#//Literal",
-            "$ref" : "//@author/@messages.7/@generates.0/@asLiteral.0"
+            "$ref" : "//@author/@messages.7/@generates.0/@asLiterals.0"
           } ]
         } ]
       } ]
@@ -196,20 +196,20 @@
           "eClass" : "http://www.unikoblenz.de/keml#//SendMessage",
           "$ref" : "//@author/@messages.8"
         } ],
-        "asLiteral" : [ { }, {
+        "asLiterals" : [ { }, {
           "negated" : true
         } ]
       }, {
         "message" : "most empty, none with gradle, one in 2.17.0 version",
-        "asLiteral" : [ { }, {
+        "asLiterals" : [ { }, {
           "negated" : true
         } ]
       }, {
         "message" : "5 URLs of unknown repositories",
-        "asLiteral" : [ {
+        "asLiterals" : [ {
           "premises" : [ {
             "eClass" : "http://www.unikoblenz.de/keml#//Literal",
-            "$ref" : "//@author/@messages.25/@generates.1/@asLiteral.0"
+            "$ref" : "//@author/@messages.25/@generates.1/@asLiterals.0"
           } ]
         }, {
           "negated" : true
@@ -247,14 +247,14 @@
             "$ref" : "//@author/@messages.1/@generates.1"
           }
         } ],
-        "asLiteral" : [ { }, {
+        "asLiterals" : [ { }, {
           "negated" : true,
           "premises" : [ {
             "eClass" : "http://www.unikoblenz.de/keml#//Literal",
-            "$ref" : "//@author/@messages.11/@generates.2/@asLiteral.0"
+            "$ref" : "//@author/@messages.11/@generates.2/@asLiterals.0"
           }, {
             "eClass" : "http://www.unikoblenz.de/keml#//Literal",
-            "$ref" : "//@author/@preknowledge.2/@asLiteral.0"
+            "$ref" : "//@author/@preknowledge.2/@asLiterals.0"
           } ]
         } ]
       } ]
@@ -294,14 +294,14 @@
           "eClass" : "http://www.unikoblenz.de/keml#//SendMessage",
           "$ref" : "//@author/@messages.14"
         } ],
-        "asLiteral" : [ { }, {
+        "asLiterals" : [ { }, {
           "negated" : true,
           "premises" : [ {
             "eClass" : "http://www.unikoblenz.de/keml#//Literal",
-            "$ref" : "//@author/@messages.15/@generates.1/@asLiteral.0"
+            "$ref" : "//@author/@messages.15/@generates.1/@asLiterals.0"
           }, {
             "eClass" : "http://www.unikoblenz.de/keml#//Literal",
-            "$ref" : "//@author/@messages.15/@generates.0/@asLiteral.0"
+            "$ref" : "//@author/@messages.15/@generates.0/@asLiterals.0"
           } ]
         } ]
       }, {
@@ -314,12 +314,12 @@
             "$ref" : "//@author/@messages.1/@generates.1"
           }
         } ],
-        "asLiteral" : [ { }, {
+        "asLiterals" : [ { }, {
           "negated" : true
         } ]
       }, {
         "message" : "dependecies are in build files",
-        "asLiteral" : [ { }, {
+        "asLiterals" : [ { }, {
           "negated" : true
         } ]
       } ]
@@ -367,12 +367,12 @@
           "eClass" : "http://www.unikoblenz.de/keml#//SendMessage",
           "$ref" : "//@author/@messages.16"
         } ],
-        "asLiteral" : [ { }, {
+        "asLiterals" : [ { }, {
           "negated" : true
         } ]
       }, {
         "message" : "~2k repositories",
-        "asLiteral" : [ { }, {
+        "asLiterals" : [ { }, {
           "negated" : true
         } ]
       } ]
@@ -405,16 +405,16 @@
           "eClass" : "http://www.unikoblenz.de/keml#//ReceiveMessage",
           "$ref" : "//@author/@messages.27"
         } ],
-        "asLiteral" : [ { }, {
+        "asLiterals" : [ { }, {
           "negated" : true
         } ]
       }, {
         "message" : "GitHub search cannot search for library versions",
-        "asLiteral" : [ { }, {
+        "asLiterals" : [ { }, {
           "negated" : true,
           "premises" : [ {
             "eClass" : "http://www.unikoblenz.de/keml#//Literal",
-            "$ref" : "//@author/@messages.19/@generates.1/@asLiteral.0"
+            "$ref" : "//@author/@messages.19/@generates.1/@asLiterals.0"
           } ]
         } ]
       } ]
@@ -450,16 +450,16 @@
           "eClass" : "http://www.unikoblenz.de/keml#//SendMessage",
           "$ref" : "//@author/@messages.20"
         } ],
-        "asLiteral" : [ { }, {
+        "asLiterals" : [ { }, {
           "negated" : true,
           "premises" : [ {
             "eClass" : "http://www.unikoblenz.de/keml#//Literal",
-            "$ref" : "//@author/@messages.21/@generates.0/@asLiteral.0"
+            "$ref" : "//@author/@messages.21/@generates.0/@asLiterals.0"
           } ]
         } ]
       }, {
         "message" : "GitHub search can search for library versions",
-        "asLiteral" : [ { }, {
+        "asLiterals" : [ { }, {
           "negated" : true
         } ]
       } ]
@@ -489,7 +489,7 @@
           "eClass" : "http://www.unikoblenz.de/keml#//SendMessage",
           "$ref" : "//@author/@messages.22"
         } ],
-        "asLiteral" : [ { }, {
+        "asLiterals" : [ { }, {
           "negated" : true
         } ]
       } ]
@@ -525,16 +525,16 @@
             "$ref" : "//@author/@messages.1/@generates.1"
           }
         } ],
-        "asLiteral" : [ {
+        "asLiterals" : [ {
           "premises" : [ {
             "eClass" : "http://www.unikoblenz.de/keml#//Literal",
-            "$ref" : "//@author/@messages.25/@generates.1/@asLiteral.0"
+            "$ref" : "//@author/@messages.25/@generates.1/@asLiterals.0"
           } ]
         }, {
           "negated" : true,
           "premises" : [ {
             "eClass" : "http://www.unikoblenz.de/keml#//Literal",
-            "$ref" : "//@author/@messages.25/@generates.0/@asLiteral.0"
+            "$ref" : "//@author/@messages.25/@generates.0/@asLiterals.0"
           } ]
         } ]
       } ]
@@ -556,7 +556,7 @@
       },
       "generates" : [ {
         "message" : "most empty, none with gradle, two in right versions",
-        "asLiteral" : [ { }, {
+        "asLiterals" : [ { }, {
           "negated" : true
         } ]
       }, {
@@ -565,7 +565,7 @@
           "eClass" : "http://www.unikoblenz.de/keml#//SendMessage",
           "$ref" : "//@author/@messages.26"
         } ],
-        "asLiteral" : [ { }, {
+        "asLiterals" : [ { }, {
           "negated" : true
         } ]
       } ]
@@ -594,13 +594,13 @@
       "generates" : [ {
         "message" : "engage with community",
         "isInstruction" : true,
-        "asLiteral" : [ { }, {
+        "asLiterals" : [ { }, {
           "negated" : true
         } ]
       }, {
         "message" : "utilize dependency management tool",
         "isInstruction" : true,
-        "asLiteral" : [ { }, {
+        "asLiterals" : [ { }, {
           "negated" : true
         } ]
       } ],
@@ -615,7 +615,7 @@
         "eClass" : "http://www.unikoblenz.de/keml#//SendMessage",
         "$ref" : "//@author/@messages.0"
       } ],
-      "asLiteral" : [ { }, {
+      "asLiterals" : [ { }, {
         "negated" : true
       } ]
     }, {
@@ -624,7 +624,7 @@
         "eClass" : "http://www.unikoblenz.de/keml#//SendMessage",
         "$ref" : "//@author/@messages.4"
       } ],
-      "asLiteral" : [ { }, {
+      "asLiterals" : [ { }, {
         "negated" : true
       } ]
     }, {
@@ -633,10 +633,10 @@
         "eClass" : "http://www.unikoblenz.de/keml#//SendMessage",
         "$ref" : "//@author/@messages.10"
       } ],
-      "asLiteral" : [ {
+      "asLiterals" : [ {
         "premises" : [ {
           "eClass" : "http://www.unikoblenz.de/keml#//Literal",
-          "$ref" : "//@author/@messages.11/@generates.2/@asLiteral.0"
+          "$ref" : "//@author/@messages.11/@generates.2/@asLiterals.0"
         } ]
       }, {
         "negated" : true

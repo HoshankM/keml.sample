@@ -1,83 +1,83 @@
 LLM Facts
 Literal,Message
-L2,Flu
-L3,COVID-19
-L6,Allergies
-L7,Introduction of fever and sore throat eliminates  sinus infection
-L8,Strep Throat
-L10,Common cold is still possible  but is less likely
-L13,Introduction of fever and sore throat eliminates  common cold
-L14,Eliminating strep throat makes Flu or COVID more likely
-L16,Sinus Infection
-L17,Sinus infection is still possible but is less likely
-L18,Common Cold
+L1,Sinus infection is still possible but is less likely
+L3,Common Cold
+L4,Sinus Infection
+L5,Introduction of fever and sore throat eliminates  sinus infection
+L7,COVID-19
+L8,Introduction of fever and sore throat eliminates  common cold
+L11,Common cold is still possible  but is less likely
+L13,Flu
+L14,Strep Throat
+L16,Allergies
+L17,Eliminating strep throat makes Flu or COVID more likely
 
 Browser Facts
 Literal,Message
-L4,Strep throat causes red spots  on the back of the roof of the mouth
+L10,Strep throat causes red spots  on the back of the roof of the mouth
 
 Author PreKnowledge Facts
 Literal,Message
-L0,Sore throat
-L1,Fever
-L5,Headache
-L9,COVID test is negative
-L11,Runny nose
-L12,No red spots on the back of the roof of the mouth
-L15,No known allergies
+L0,No known allergies
+L2,Runny nose
+L6,No red spots on the back of the roof of the mouth
+L9,Sore throat
+L12,Fever
+L15,Headache
+L18,COVID test is negative
 
 Logic Arguments (<{premises} claim>)
 Claim,Argument
-¬L8,"[<{(L4 && L12) => ¬L8}, ¬L8>]"
-L5,"[<{L5}, L5>]"
-¬L13,"[<{L10 => ¬L13}, ¬L13>]"
-L3,"[<{(L11 && L5) => L3}, L3>, <{(L11 && L5 && L1 && L0) => L3}, L3>, <{(¬L8 && L14) => L3}, L3>]"
-L18,"[<{(L11 && L5) => L18}, L18>]"
-L15,"[<{L15}, L15>]"
-L12,"[<{L12}, L12>]"
+L13,"[<{(L2 && L15) => L13}, L13>, <{(L2 && L15 && L12 && L9) => L13}, L13>, <{(¬L14 && L17) => L13}, L13>]"
+¬L16,"[<{L0 => ¬L16}, ¬L16>]"
+¬L7,"[<{L18 => ¬L7}, ¬L7>]"
 L9,"[<{L9}, L9>]"
-L1,"[<{L1}, L1>]"
-L2,"[<{(L11 && L5) => L2}, L2>, <{(L11 && L5 && L1 && L0) => L2}, L2>, <{(¬L8 && L14) => L2}, L2>]"
-¬L18,"[<{(L1 && L0 && L13) => ¬L18}, ¬L18>]"
-¬L16,"[<{(L1 && L0 && L7) => ¬L16}, ¬L16>]"
-L6,"[<{(L11 && L5) => L6}, L6>]"
-¬L7,"[<{L17 => ¬L7}, ¬L7>]"
+L4,"[<{(L2 && L15) => L4}, L4>]"
+L16,"[<{(L2 && L15) => L16}, L16>]"
+L2,"[<{L2}, L2>]"
+L14,"[<{(L2 && L15 && L12 && L9) => L14}, L14>]"
+¬L3,"[<{(L12 && L9 && L8) => ¬L3}, ¬L3>]"
+¬L14,"[<{(L10 && L6) => ¬L14}, ¬L14>]"
+L18,"[<{L18}, L18>]"
 L0,"[<{L0}, L0>]"
-L8,"[<{(L11 && L5 && L1 && L0) => L8}, L8>]"
-¬L6,"[<{L15 => ¬L6}, ¬L6>]"
-L16,"[<{(L11 && L5) => L16}, L16>]"
-¬L3,"[<{L9 => ¬L3}, ¬L3>]"
-L11,"[<{L11}, L11>]"
+¬L8,"[<{L11 => ¬L8}, ¬L8>]"
+L3,"[<{(L2 && L15) => L3}, L3>]"
+L6,"[<{L6}, L6>]"
+¬L4,"[<{(L12 && L9 && L5) => ¬L4}, ¬L4>]"
+L7,"[<{(L2 && L15) => L7}, L7>, <{(L2 && L15 && L12 && L9) => L7}, L7>, <{(¬L14 && L17) => L7}, L7>]"
+¬L5,"[<{L1 => ¬L5}, ¬L5>]"
+L12,"[<{L12}, L12>]"
+L15,"[<{L15}, L15>]"
 
 Undercut Trees
-"└── <{(¬L8 && L14) => L3}, L3>
-    └── <{(L11 && L5 && L1 && L0) => L8}, L8>"
-"└── <{(¬L8 && L14) => L2}, L2>
-    └── <{(L11 && L5 && L1 && L0) => L8}, L8>"
-"└── <{(L1 && L0 && L7) => ¬L16}, ¬L16>
-    └── <{L17 => ¬L7}, ¬L7>"
-"└── <{(L1 && L0 && L13) => ¬L18}, ¬L18>
-    └── <{L10 => ¬L13}, ¬L13>"
+"└── <{(L12 && L9 && L5) => ¬L4}, ¬L4>
+    └── <{L1 => ¬L5}, ¬L5>"
+"└── <{(L12 && L9 && L8) => ¬L3}, ¬L3>
+    └── <{L11 => ¬L8}, ¬L8>"
+"└── <{(¬L14 && L17) => L7}, L7>
+    └── <{(L2 && L15 && L12 && L9) => L14}, L14>"
+"└── <{(¬L14 && L17) => L13}, L13>
+    └── <{(L2 && L15 && L12 && L9) => L14}, L14>"
 
 Rebuttals
 Claim,rebutted by
-¬L0,"[<{L0}, L0>]"
-¬L8,"[<{(L11 && L5 && L1 && L0) => L8}, L8>]"
-¬L12,"[<{L12}, L12>]"
-L3,"[<{L9 => ¬L3}, ¬L3>]"
-L18,"[<{(L1 && L0 && L13) => ¬L18}, ¬L18>]"
-¬L15,"[<{L15}, L15>]"
-¬L11,"[<{L11}, L11>]"
+¬L16,"[<{(L2 && L15) => L16}, L16>]"
+¬L7,"[<{(L2 && L15) => L7}, L7>, <{(L2 && L15 && L12 && L9) => L7}, L7>, <{(¬L14 && L17) => L7}, L7>]"
+L4,"[<{(L12 && L9 && L5) => ¬L4}, ¬L4>]"
 ¬L9,"[<{L9}, L9>]"
-¬L18,"[<{(L11 && L5) => L18}, L18>]"
-¬L1,"[<{L1}, L1>]"
-L7,"[<{L17 => ¬L7}, ¬L7>]"
-¬L16,"[<{(L11 && L5) => L16}, L16>]"
-L6,"[<{L15 => ¬L6}, ¬L6>]"
-¬L5,"[<{L5}, L5>]"
-L8,"[<{(L4 && L12) => ¬L8}, ¬L8>]"
-¬L6,"[<{(L11 && L5) => L6}, L6>]"
-L13,"[<{L10 => ¬L13}, ¬L13>]"
-¬L2,"[<{(L11 && L5) => L2}, L2>, <{(L11 && L5 && L1 && L0) => L2}, L2>, <{(¬L8 && L14) => L2}, L2>]"
-L16,"[<{(L1 && L0 && L7) => ¬L16}, ¬L16>]"
-¬L3,"[<{(L11 && L5) => L3}, L3>, <{(L11 && L5 && L1 && L0) => L3}, L3>, <{(¬L8 && L14) => L3}, L3>]"
+¬L12,"[<{L12}, L12>]"
+L16,"[<{L0 => ¬L16}, ¬L16>]"
+L14,"[<{(L10 && L6) => ¬L14}, ¬L14>]"
+¬L3,"[<{(L2 && L15) => L3}, L3>]"
+¬L14,"[<{(L2 && L15 && L12 && L9) => L14}, L14>]"
+L8,"[<{L11 => ¬L8}, ¬L8>]"
+¬L0,"[<{L0}, L0>]"
+L3,"[<{(L12 && L9 && L8) => ¬L3}, ¬L3>]"
+¬L15,"[<{L15}, L15>]"
+L5,"[<{L1 => ¬L5}, ¬L5>]"
+¬L4,"[<{(L2 && L15) => L4}, L4>]"
+¬L6,"[<{L6}, L6>]"
+¬L18,"[<{L18}, L18>]"
+L7,"[<{L18 => ¬L7}, ¬L7>]"
+¬L13,"[<{(L2 && L15) => L13}, L13>, <{(L2 && L15 && L12 && L9) => L13}, L13>, <{(¬L14 && L17) => L13}, L13>]"
+¬L2,"[<{L2}, L2>]"
