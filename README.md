@@ -1,6 +1,6 @@
 # KEML sample
 
-**Note:** This branch features an alternative [KEML](https://github.com/keml-group/) component that leverages logic-based argumentation framework (**LAF**), and is designed *only* to be used along other LAF components of KEML. For the corresponding baseline version of this component, see the baseline [bipolar weighted framework](https://github.com/keml-group/keml.sample) version.
+**Note:** This branch features an alternative [KEML](https://github.com/keml-group/) component that leverages a logic-based argumentation framework (**LAF**), and is currently *only* tested for use in conjunction with the other LAF components of KEML. For the corresponding base version of this component, see the [base sample](https://github.com/keml-group/keml.sample) repository.
 -----------------------
 
 This project holds sample files on which you can try out the different KEML modules. We prepared to conversations from our first case study (log4j) with all corresponding files as **LAFExamples** in a folder with that name.
